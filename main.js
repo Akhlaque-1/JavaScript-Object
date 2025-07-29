@@ -1,7 +1,7 @@
 // assignment = 07
 // 1.
 // Prompt user to enter a city name
-let city = prompt("Enter your city name:");
+var city = prompt("Enter your city name:");
 
 // Convert input to lowercase to avoid case sensitivity issues
 city = city.toLowerCase();
@@ -189,7 +189,7 @@ if (num % 2 === 0) {
 
 
 // 10. Temperature Checker
-let temperature = +prompt("Enter temperature in °C:");
+var temperature = +prompt("Enter temperature in °C:");
 if (temperature > 40) {
   alert("It is too hot outside.");
 } else if (temperature > 30) {
@@ -206,11 +206,11 @@ if (temperature > 40) {
 
 
 // 11. Simple Calculator
-let firstNumber = +prompt("Enter the first number:");
-let secondNumber = +prompt("Enter the second number:");
-let operation = prompt("Enter the operation (+, -, *, /, %):");
+var firstNumber = +prompt("Enter the first number:");
+var secondNumber = +prompt("Enter the second number:");
+var operation = prompt("Enter the operation (+, -, *, /, %):");
 
-let result;
+var result;
 
 if (operation === "+") {
   result = firstNumber + secondNumber;
@@ -239,15 +239,15 @@ if (result !== undefined) {
 // assignment 8
 
 
-let input = prompt("Enter a single character:");
-let charCode = input.charCodeAt(0); // Get ASCII code of first character
+var input = prompt("Enter a single character:");
+var charCode = input.charCodeAt(0); // Get ASCII code of first character
 
 if (charCode >= 48 && charCode <= 57) {
   alert("You entered a number.");
 } else if (charCode >= 65 && charCode <= 90) {
-  alert("You entered an uppercase letter.");
+  alert("You entered an uppercase varter.");
 } else if (charCode >= 97 && charCode <= 122) {
-  alert("You entered a lowercase letter.");
+  alert("You entered a lowercase varter.");
 } else {
   alert("You entered a special character or something else.");
 }
@@ -255,8 +255,8 @@ if (charCode >= 48 && charCode <= 57) {
 
 
 //  02
-let num1 = +prompt("Enter the first number:");
-let num2 = +prompt("Enter the second number:");
+var num1 = +prompt("Enter the first number:");
+var num2 = +prompt("Enter the second number:");
 
 if (num1 > num2) {
   alert("The larger number is: " + num1);
@@ -267,7 +267,7 @@ if (num1 > num2) {
 }
 
 // 03
-let number = +prompt("Enter a number:");
+var number = +prompt("Enter a number:");
 
 if (number > 0) {
   alert("The number is positive.");
@@ -278,10 +278,10 @@ if (number > 0) {
 }
 
 // 04
-let char = prompt("Enter a single character:");
+var char = prompt("Enter a single character:");
 
 if (char.length === 1) {
-  let lowerChar = char.toLowerCase(); // Convert to lowercase for easy comparison
+  var lowerChar = char.toLowerCase(); // Convert to lowercase for easy comparison
 
   if (
     lowerChar === 'a' ||
@@ -333,7 +333,7 @@ alert(greeting);
 
 // 07
 
-let time = +prompt("Enter time in 24-hour format (e.g. 1900 for 7 PM):");
+var time = +prompt("Enter time in 24-hour format (e.g. 1900 for 7 PM):");
 
 if (time >= 0 && time < 1200) {
   alert("Good morning!");
